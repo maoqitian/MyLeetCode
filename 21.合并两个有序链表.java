@@ -48,11 +48,13 @@ class Solution {
                 prev.next = l2;
                 l2 = l2.next;
             }
+            //移动记录链表节点
+            prev = prev.next;
         }
         //确定最终合并的是哪个链表
         prev.next = l1 == null ? l2 : l1;
 
-        return prehead;
+        return prehead.next;
 
     }
 }
