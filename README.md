@@ -1,2 +1,2 @@
-# MyLeetCode 个人算法学习练习题
+# LeetCode 算法学习练习题
 personal LeetCode learn
