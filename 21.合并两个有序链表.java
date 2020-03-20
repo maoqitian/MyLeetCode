@@ -35,7 +35,7 @@ class Solution {
         // }
 
         //方法二 迭代
-        ListNode prehead = new ListNode(-1);
+        ListNode prehead = new ListNode(0);
 
         ListNode prev = prehead;
 
