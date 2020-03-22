@@ -51,7 +51,7 @@ class Solution {
             //移动记录链表节点
             prev = prev.next;
         }
-        //确定最终合并的是哪个链表
+        //找到最后没有比较的那一个数据加入到链表中
         prev.next = l1 == null ? l2 : l1;
 
         return prehead.next;
