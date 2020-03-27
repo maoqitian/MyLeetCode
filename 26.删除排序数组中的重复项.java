@@ -22,22 +22,38 @@ class Solution {
         // return nums.length;
 
 
-        //双指针 快慢指针 迭代数组 不同元素则放回到数据组中
+        //双指针 快慢指针 迭代数组 不同元素则放回到数据组中 时间复杂度 O(n)
 
-        if(nums.length == 0 ) return 0;
+        // if(nums.length == 0 ) return 0;
         
-        int slow = 0; //慢指针
-        //快指针从 1 开始遍历
-        for (int i = 1; i < nums.length; i++) {
-            if(nums[i] != nums[slow]){
-               //先移动，要不然先复制则多出一位
-                slow ++ ;
-                nums[slow] = nums[i];
+        // int slow = 0; //慢指针
+        // //快指针从 1 开始遍历
+        // for (int i = 1; i < nums.length; i++) {
+        //     if(nums[i] != nums[slow]){
+        //        //先移动，要不然先复制则多出一位
+        //         slow ++ ;
+        //         nums[slow] = nums[i];
                
+        //     }
+        // }
+        
+        // return slow+1;
+
+        //快慢指针
+
+        int x = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if(nums[i]!=nums[x]){
+               x++;
+               //将不重复的放入数组位置
+               nums[x] = nums[i];
             }
         }
+
+        return x+1;
+
         
-        return slow+1;
 
 
     }
