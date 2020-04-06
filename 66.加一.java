@@ -8,7 +8,7 @@
 class Solution {
     public int[] plusOne(int[] digits) {
 
-       //从末尾遍历 
+       //从末尾遍历 时间复杂度 O(n)
        for (int i = digits.length-1; i>= 0; i--) {
            digits[i]++;
            digits[i] = digits[i]%10;
