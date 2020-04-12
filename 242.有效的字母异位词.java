@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 
 /*
  * @lc app=leetcode.cn id=242 lang=java
