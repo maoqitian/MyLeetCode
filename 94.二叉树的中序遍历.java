@@ -40,11 +40,12 @@ class Solution {
         TreeNode curr = root;
 
         while(curr!=null || !stack.isEmpty()){
-
+           //如果左子树不为空
            if(curr!=null){
                stack.push(curr);
                curr = curr.left;
            }else{
+            //遍历完成左子树 从栈中取出继续遍历操作   
             curr = stack.pop();
             result.add(curr.val);
             curr = curr.right;

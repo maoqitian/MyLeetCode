@@ -1,3 +1,10 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
+
+import javax.swing.tree.TreeNode;
+
 /*
  * @lc app=leetcode.cn id=145 lang=java
  *
@@ -19,9 +26,31 @@ class Solution {
 
         //方法一  递归 时间复杂度 O(n)
 
-        List<Integer> result = new ArrayList<>();
+        // List<Integer> result = new ArrayList<>();
 
-        postorderTree(root,result);
+        // postorderTree(root,result);
+
+        // return result;
+        
+        // 方法二 使用栈 时间复杂度 O(n)
+
+        LinkedList<TreeNode> stack = new LinkedList<>();
+
+        LinkedList<Integer> result = new LinkedList<>();
+
+        TreeNode curr = root;
+
+        while(curr!=null || !stack.isEmpty()){
+            if(curr!=null){
+               stack.push(curr);
+               result.addFirst(curr.val);
+               curr = curr.right;
+            }else{
+               curr = stack.pop();
+               curr = curr.left; 
+            }
+            
+        }
 
         return result;
 

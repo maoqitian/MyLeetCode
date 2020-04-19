@@ -1,5 +1,9 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
+
+import javax.swing.tree.TreeNode;
 
 /*
  * @lc app=leetcode.cn id=144 lang=java
@@ -22,10 +26,30 @@ class Solution {
 
         //方法一  递归 时间复杂度 O(n)
 
-        List<Integer> result = new ArrayList<>();
+        // List<Integer> result = new ArrayList<>();
 
-        preorderTree(root,result);
+        // preorderTree(root,result);
 
+        // return result;
+
+        //方法二 使用栈
+
+        LinkedList<TreeNode> stack = new LinkedList<>();
+        List <Integer> result = new ArrayList();
+
+        //当前记录的节点 node
+        TreeNode curr = root;
+        while(curr!=null || !stack.isEmpty()){
+          if(curr!=null){
+            result.add(curr.val);
+            stack.push(curr);
+            curr = curr.left;
+          }else{
+            curr = stack.pop();
+            curr = curr.right;
+          }
+
+        }
         return result;
 
     }
