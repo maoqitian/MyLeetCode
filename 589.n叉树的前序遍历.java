@@ -30,6 +30,8 @@ class Node {
 class Solution {
     public List<Integer> preorder(Node root) {
 
+        //方法一 递归 时间复杂度 O(n)
+
         List<Integer> result = new ArrayList<>();
 
         preNodeResult(root,result);

@@ -8,7 +8,7 @@
 class Solution {
     public int climbStairs(int n) {
 
-        //方法一 : 找规律
+        //方法一 : 找规律 时间复杂度 O(n)
         // 一层 一种方法
         //二层 两种方法
         //三层 等于 一层方法加上二层方法
@@ -24,15 +24,35 @@ class Solution {
         int f2 = 2;
         int f3 = 3;
 
-        for (int i = 3; i < n+1; i++) {
-
-            f3 = f1+f2;
-            //直接赋值 不必新建数组保存变量
+        for (int i = 3; i < n+1; i++) { 
+            f3 = f1 + f2;
+            //直接赋值继续下一层循环
             f1 = f2;
             f2 = f3;
         }
 
         return f2;
+
+
+        //方法二 使用暴力 递归  时间复杂度 O(2^n) 超时
+
+        //return count(n);
+
+    }
+
+    int count(int n){
+
+        //退出递归条件
+        if(n<=2){
+           return n;
+        }else{
+            return count(n-1)+count(n-2);
+        }
+        // 逻辑处理
+
+        // 继续下一层次递归
+
+        //清理数据
 
 
     }
