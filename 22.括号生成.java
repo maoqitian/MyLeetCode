@@ -33,18 +33,18 @@ class Solution {
     void generateString(int max,int left,int right,String s,List<String> result){
          //递归四步骤
          //1 处理递归停止条件
-         if(left == max && right == max){
-            result.add(s);
-            return;
+         if(left == max && right == max){ //当次条件成立说明已经完成字符串拼接
+             result.add(s);
+             return;
          }
 
          //2逻辑处理 3 调用函数本身进入下一层递归
-         if(left<max){
+         if(left<max){ //首先加入左括号
             generateString(max, left+1, right, s+"(", result);
          }
-         //保证成对
-         if(right<left){
-            generateString(max, left, right+1, s+")", result);
+
+         if(right<left){ //保持能组成括号组
+           generateString(max, left, right+1, s+")", result);
          }
 
 
