@@ -17,7 +17,7 @@
 class Solution {
     public int maxDepth(TreeNode root) {
 
-        //方法一 递归 +1 计算值 最深值
+        //方法一 递归 +1 计算值 最深值 时间复杂度 O(n)
 
         //循环退出条件
         if(root == null){
