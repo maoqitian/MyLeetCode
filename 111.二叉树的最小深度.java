@@ -17,7 +17,7 @@
 class Solution {
     public int minDepth(TreeNode root) {
 
-        //方法一 递归 每个节点都遍历一遍 时间复杂度 O(n)
+        //方法一 深度优先 每个节点都遍历一遍 时间复杂度 O(n)
         //递归结束条件
         /** Solution 1: DFS 
  * Key point: 

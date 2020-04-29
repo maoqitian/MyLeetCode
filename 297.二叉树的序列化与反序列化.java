@@ -2,10 +2,6 @@ import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.LinkedList;
 
-import javax.swing.tree.TreeNode;
-
-import apple.laf.JRSUIUtils.Tree;
-
 /*
  * @lc app=leetcode.cn id=297 lang=java
  *
@@ -66,18 +62,19 @@ public class Codec {
      * @return
      */
     TreeNode deserializeTree(LinkedList<String> linkedList){
-
           String val = linkedList.remove();
-          //递归结束条件
+          //递归结束条件，如果链表获取节点等于NULL则直接返回 null
           if(NULL.equals(val)){
              return null;
-          }else{
-          //逻辑处理 进入下层递归
-          TreeNode treeNode = new TreeNode(Integer.valueOf(val));
-          treeNode.left = deserializeTree(linkedList);
-          treeNode.right = deserializeTree(linkedList);
-          return treeNode;
+          }else{  //否则新建一个树节点
+            //逻辑处理 进入下层递归
+            TreeNode treeNode = new TreeNode(Integer.valueOf(val));
+            treeNode.left = deserializeTree(linkedList);
+            treeNode.right = deserializeTree(linkedList);
+
+            return treeNode;
           }
+          
           //数据释放
     }
 }
