@@ -33,9 +33,6 @@ class Solution {
         return left == null ? right : right == null ? left : root;
         // 数据释放
 
-
-
-        
     }
 }
 // @lc code=end
