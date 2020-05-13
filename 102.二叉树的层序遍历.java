@@ -24,9 +24,8 @@ import javax.swing.tree.TreeNode;
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
 
-
            //思路 二叉树的层序遍历 通用思路为使用 队列，利用队列先进先出特点保存每一行的结点，遍历之后出队
-
+           //时间复杂度 空间复杂度 O(n)
            List<List<Integer>> res = new ArrayList<>();
 
            if(root == null){
@@ -53,7 +52,7 @@ class Solution {
                    if(queueNodes.peek().right !=null){
                     queueNodes.offer(queueNodes.peek().right);
                   }
-                  //保存当前节点行元素值数组
+                  //保存当前节点行元素值数组 并从队列中删除
                   temp.add(queueNodes.poll().val);
                }
                //保存每一层节点数组
