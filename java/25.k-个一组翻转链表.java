@@ -44,7 +44,12 @@ class Solution {
 
         return result.next;
     }
-
+    /**
+     * 
+     * @param pre 当前链表段第一个节点
+     * @param next 当前链表段最后一个节点
+     * @return
+     */
     //单转反转操作 原地反转
     private static ListNode reverse(ListNode pre, ListNode next){
         // 获取当前节点，也就是反转之后最后一个节点
@@ -52,8 +57,8 @@ class Solution {
         //当前结点指向最后一个节点的后继
         ListNode cur = last.next;
 
-        //如果当前结点不等于反转组的最后一个节点
-        while(cur!= next){
+        //如果当前节点不等于没翻转之前的链表段最后一个节点
+        while(cur!= next){ 
            //last连接下一次需要反转的节点
           last.next = cur.next;
            //当前节点插入到头结点原本位置 反转节点cur
