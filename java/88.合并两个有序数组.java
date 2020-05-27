@@ -15,7 +15,6 @@ class Solution {
         // System.arraycopy(nums2, 0, nums1, m, n);
         // Arrays.sort(nums1);
 
-
         //方法二 ： 双指针 从后指针从后往前
 
         //原始数组指针
