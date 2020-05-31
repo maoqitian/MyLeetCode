@@ -69,6 +69,7 @@ class Solution {
         heights = newHeights;
         //创建栈
         Deque<Integer> stack = new ArrayDeque<>();
+        stack.addLast(0);
         for(int i = 1;i<len;i++){
            while(heights[stack.peekLast()] > heights[i]){
              int height = heights[stack.removeLast()];
