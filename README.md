@@ -1,5 +1,12 @@
 > LeetCode lean
 
+## LeetCode Algorithm
+
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Java](./java/2.两数相加.java)|Medium|
+|1|[Two Sum](https://leetcode.com/problems/two-sum/) | [Java](./java/1.两数之和.java)|Easy|
+
 # 算法思想
 ## 最基本算法
 
