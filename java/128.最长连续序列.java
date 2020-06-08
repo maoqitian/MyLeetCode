@@ -19,6 +19,9 @@ class Solution {
         //这样下一个 出现相同元素则会不会重复在set 中查找，并记录删除次数
         
         HashSet<Integer> hash = new HashSet<>();
+        
+        HashMap hashMap = new HashMap<>();
+        hashMap.containsKey(key)
 
         for (int i = 0; i < nums.length; i++) {
             hash.add(nums[i]);
