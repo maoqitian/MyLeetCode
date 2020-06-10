@@ -20,23 +20,27 @@ class Solution {
         //字符串的每一个字符，如果有相同的，则将最先进来元素找到对应值删除
         //时间复杂度 O(n)
 
-        int maxLenght = 0; //匹配出的字符串的长度
-        int left = 0;//存储字符串的重复 长度
+        // 使用 hashmap 存储值 key 为字符 值为index
+        if(s.length() == 0) return 0;
 
-        if (s.length()==0) return 0;
-        //以字符串为key 值记录字符串位置 也就是长度
-        HashMap<Character,Integer> hashMap = new HashMap<>();
+        HashMap<Character,Integer> map = new HashMap<>();
+        //窗口左边 index
+        int left = 0;
+        //返回字符串最大长度
+        int max = 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            if(hashMap.containsKey(s.charAt(i))){
-                //包含相同则加一 
-                left = Math.max(left,hashMap.get(s.charAt(i)) + 1);
+        //循环遍历字符串的字符
+        for(int i = 0; i< s.length(); i++){
+            if(map.containsKey(s.charAt(i))){ //如果包含
+               //更新左边界index
+               left = Math.max(left,map.get(s.charAt(i))+1);
             }
-            hashMap.put(s.charAt(i), i);
-            //最终求出 减去重复长度剩下就是不重复的
-            maxLenght = Math.max(maxLenght, i - left +1);
+            //否则存储当前字符串
+            map.put(s.charAt(i),i);
+            // 获取当前字符串长度与最大长度比较, 当前长度减去窗口左边界就是当前字符串长度
+            max = Math.max(max,i - left + 1 );
         }
-        return maxLenght;
+        return max;
 
     }
 }
