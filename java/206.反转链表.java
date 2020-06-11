@@ -17,26 +17,29 @@ class Solution {
     public ListNode reverseList(ListNode head) {
 
          //方法一 迭代 将链表下一个元素next 指向上一个元素, 时间复杂度 0(n)
-         //将当前节点的 next 指针改为指向前一个元素。由于节点没有引用其上一个节点，
-         //因此必须事先存储其前一个元素。在更改引用之前，还需要另一个指针来存储下一个节点。不要忘记在最后返回新的头引用
+         
+         //创建新节点
+         ListNode newHead = null;
 
-        //  ListNode newHead = null;
-
-        //  while(head!=null){
-        //      ListNode temp = head.next;
-        //      head.next = newHead;
-        //      newHead = head;
-        //      head = temp;
-        //  }
-        //  return newHead;
+         while(head!=null){
+             //获取当前节点
+             ListNode next = head.next;
+             //当前节点下一个指向新节点 也就是前一个节点
+             head.next = newHead;
+             //前一个节点移动指向当前节点
+             newHead = head;
+             //当前节点移动指向它原本的下一个节点
+             head = next;
+         }
+         return newHead;
 
          //方法二 递归 时间复杂度 0(n) 
 
-         if (head == null || head.next == null) return head;
-         ListNode p = reverseList(head.next);
-         head.next.next = head;
-         head.next = null;
-         return p;
+        //  if (head == null || head.next == null) return head;
+        //  ListNode p = reverseList(head.next);
+        //  head.next.next = head;
+        //  head.next = null;
+        //  return p;
 
 
     }
