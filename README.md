@@ -5,6 +5,7 @@
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./java/206.反转链表.java)|Easy|
+|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Java](./java/70.爬楼梯.java)|Easy|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Java](./java/4.寻找两个正序数组的中位数.java)|Hard|
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Java](./java/3.无重复字符的最长子串.java)|Medium|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Java](./java/2.两数相加.java)|Medium|
