@@ -6,6 +6,8 @@
 |---| ----- | -------- | ---------- |
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./java/206.反转链表.java)|Easy|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Java](./java/70.爬楼梯.java)|Easy|
+|9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Java](./java/9.回文数.java)|Easy|
+|7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Java](./java/7.整数反转.java)|Easy|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Java](./java/5.最长回文子串.java)|Medium|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Java](./java/4.寻找两个正序数组的中位数.java)|Hard|
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Java](./java/3.无重复字符的最长子串.java)|Medium|
