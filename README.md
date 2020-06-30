@@ -7,6 +7,7 @@
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./java/206.反转链表.java)|Easy|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Java](./java/70.爬楼梯.java)|Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Java](./java/21.合并两个有序链表.java)|Easy|
+|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Java](./java/20.有效的括号.java)|Easy|
 |15|[3Sum](https://leetcode.com/problems/3sum/) | [Java](./java/15.三数之和.java)|Medium|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [Java](./java/11.盛最多水的容器.java)|Medium|
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Java](./java/9.回文数.java)|Easy|
