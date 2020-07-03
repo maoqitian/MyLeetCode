@@ -12,7 +12,7 @@ class Solution {
 
         int left =0,right = nums.length-1;
 
-        while(right > left){ //当前有边界大于左边界
+        while(right > left){ //当前右边界大于左边界
 
             int mid = left + (right - left) /2;
  
