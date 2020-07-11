@@ -6,6 +6,7 @@
 |---| ----- | -------- | ---------- |
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./java/206.反转链表.java)|Easy|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Java](./java/70.爬楼梯.java)|Easy|
+|24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Java](./java/24.两两交换链表中的节点.java)|Medium|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Java](./java/22.括号生成.java)|Medium|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Java](./java/21.合并两个有序链表.java)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Java](./java/20.有效的括号.java)|Easy|
