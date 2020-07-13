@@ -48,7 +48,8 @@ class Solution {
      * 
      * @param pre 当前链表段第一个节点
      * @param next 当前链表段最后一个节点
-     * @return
+     * @return   //方法返回值也就是翻转后链表段的最后一个node
+
      */
     //单转反转操作 原地反转
     private static ListNode reverse(ListNode pre, ListNode next){
