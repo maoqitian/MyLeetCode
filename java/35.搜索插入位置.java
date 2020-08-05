@@ -8,7 +8,7 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
 
-        //二分查找
+        //二分查找 时间复杂度 O(logn)
 
         int left = 0,right = nums.length;
 
