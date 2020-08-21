@@ -4,9 +4,11 @@
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Java](./java/297.二叉树的序列化与反序列化.java)|Hard|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./java/206.反转链表.java)|Easy|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Java](./java/145.二叉树的后序遍历.java)|Hard|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./java/144.二叉树的前序遍历.java)|Medium|
+|111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Java](./java/111.二叉树的最小深度.java)|Easy|
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Java](./java/110.平衡二叉树.java)|Easy|
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Java](./java/104.二叉树的最大深度.java)|Easy|
 |100|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Java](./java/100.相同的树.java)|Easy|
