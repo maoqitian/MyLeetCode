@@ -34,7 +34,7 @@ public class Codec {
         return stringBuilder.toString();
     }
     /**
-     * 中序遍历拼接字符串 递归
+     * 前序遍历拼接字符串 递归
      * @param root 递归树
      * @param stringBuilder 字符串拼接
      */
