@@ -14,7 +14,8 @@
 |100|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Java](./java/100.相同的树.java)|Easy|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./java/94.二叉树的中序遍历.java)|Medium|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Java](./java/70.爬楼梯.java)|Easy|
-|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [Java](./java/41.缺失的第一个正数.java)|Hard|
+|43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/) | [Java](./java/43.字符串相乘.java)|Hard|
+|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [Java](./java/42.接雨水.java)|Hard|
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Java](./java/35.搜索插入位置.java)|Easy|
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Java](./java/33.搜索旋转排序数组.java)|Medium|
 |26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Java](./java/26.删除排序数组中的重复项.java)|Easy|
