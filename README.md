@@ -14,6 +14,7 @@
 |100|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Java](./java/100.相同的树.java)|Easy|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./java/94.二叉树的中序遍历.java)|Medium|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Java](./java/70.爬楼梯.java)|Easy|
+|66|[Plus One](https://leetcode.com/problems/plus-one/) | [Java](./java/66.加一.java)|Easy|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Java](./java/50.pow-x-n.java)|Medium|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/) | [Java](./java/43.字符串相乘.java)|Medium|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [Java](./java/42.接雨水.java)|Hard|
