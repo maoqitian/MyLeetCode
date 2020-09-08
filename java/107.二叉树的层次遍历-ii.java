@@ -19,9 +19,7 @@ class Solution {
 
 
         //使用队列 层序遍历完在反转 时间浮渣度 O(N)
-
-        List<List<Integer>> tempres = new ArrayList<>();
-        List<List<Integer>> res = new ArrayList<>();
+        LinkedList<List<Integer>> result = new LinkedList<>();
 
         if(root == null) return res;
 
@@ -43,16 +41,10 @@ class Solution {
                templist.add(node.val);
             }
             
-            //保存每一层结果
-            res.add(templist);
+            //保存每一层结果 并加入到结果第一位 相当于反转
+            res.addFirst(templist);
         }
-
-        //对结果反转
-        for(int i = res.size()-1;i>=0;i--){
-           tempres.add(res.get(i));
-        }
-
-        return tempres;
+        return res;
 
     }
 }
