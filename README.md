@@ -84,6 +84,52 @@ public void recur(int level, int param) {
 - 提升数据结构维度（比如一维变成二维）
 - 空间换时间
  
+# 树
+## 数据结构
+- 树结构是一种非线性的数据结构，树是以分支的关系定义的层次结构（树的结构定义是一个递归定义）
+```
+ public class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode(int x) { val = x; }
+  }
+```
+## 二叉树
+- 有且仅有一个称之为根的节点，二叉树每个节点至多只能有两颗子树（无节点则成为空二叉树，只有一个根节点无子树也能称为二叉树）
+
+![二叉树的五种基本形态](https://github.com/maoqitian/MaoMdPhoto/raw/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%BA%94%E7%A7%8D%E5%9F%BA%E6%9C%AC%E5%BD%A2%E6%80%81.jpg)
+
+## 树的遍历
+- 先序遍历（中左右）
+- 中序遍历（左中右）
+- 后序遍历（左右中）
+
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|145|[Binary Tree Postorder Traversal（二叉树的后序遍历）](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Java](./java/145.二叉树的后序遍历.java)|Hard|
+|94|[Binary Tree Inorder Traversal（二叉树的中序遍历）](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./java/94.二叉树的中序遍历.java)|Medium|
+|144|[Binary Tree Preorder Traversal（二叉树的前序遍历）](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./java/144.二叉树的前序遍历.java)|Medium|
+
+### DFS（深度优先遍历）
+- 递归思想
+- 设置递归退出条件
+- 遍历结点和子结点
+
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|111|[Minimum Depth of Binary Tree（二叉树的最小深度）](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Java](./java/111.二叉树的最小深度.java)|Easy|
+|104|[Maximum Depth of Binary Tree（二叉树的最大深度）](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Java](./java/104.二叉树的最大深度.java)|Easy|
+
+### BFS（广度优先遍历）
+- 使用队列先进先出原则保存每一层结点
+- 并保存当前层存在的子节点到队列中
+
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|637|[Average of Levels in Binary Tree（二叉树的层平均值）](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | [Java](./java/637.二叉树的层平均值.java)|Easy|
+|107|[binary-tree-level-order-traversal-ii(二叉树的层次遍历-ii)](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [Java](./java/107.二叉树的层次遍历-ii.java)|Easy|
+|102|[Binary Tree Level Order Traversal(二叉树的层序遍历)](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Java](./jjava/102.二叉树的层序遍历.java)|Medium| 
 
 # 基本数据结构
 
