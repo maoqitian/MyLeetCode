@@ -6,6 +6,8 @@
 |---| ----- | -------- | ---------- |
 |637|[Average of Levels in Binary Tree（二叉树的层平均值）](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | [Java](./java/637.二叉树的层平均值.java)|Easy|
 |297|[Serialize and Deserialize Binary Tree（二叉树的序列化与反序列化）](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Java](./java/297.二叉树的序列化与反序列化.java)|Hard|
+|226|[Invert Binary Tree（翻转二叉树）](https://leetcode.com/problems/invert-binary-tree/) | [Java](./java/226.翻转二叉树.java)|Easy|
+|297|[Serialize and Deserialize Binary Tree（二叉树的序列化与反序列化）](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Java](./java/297.二叉树的序列化与反序列化.java)|Hard|
 |206|[Reverse Linked List（反转链表）](https://leetcode.com/problems/reverse-linked-list/) | [Java](./java/206.反转链表.java)|Easy|
 |145|[Binary Tree Postorder Traversal（二叉树的后序遍历）](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Java](./java/145.二叉树的后序遍历.java)|Hard|
 |144|[Binary Tree Preorder Traversal（二叉树的前序遍历）](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./java/144.二叉树的前序遍历.java)|Medium|
