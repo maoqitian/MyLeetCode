@@ -19,7 +19,7 @@ import javax.swing.tree.TreeNode;
 class Solution {
     public TreeNode invertTree(TreeNode root) {
 
-        //想法一 递归后序遍历二叉树替换值
+        //想法一 递归后序遍历二叉树替换值 时间复杂度 O(n)
         
         //递归四步骤
         //结束递归条件
