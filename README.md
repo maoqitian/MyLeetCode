@@ -21,6 +21,8 @@
 |70|[Climbing Stairs（爬楼梯）](https://leetcode.com/problems/climbing-stairs/) | [Java](./java/70.爬楼梯.java)|Easy|
 |66|[Plus One（加一）](https://leetcode.com/problems/plus-one/) | [Java](./java/66.加一.java)|Easy|
 |50|[Pow(x, n)（x的n次幂）](https://leetcode.com/problems/powx-n/) | [Java](./java/50.pow-x-n.java)|Medium|
+|47|[Permutations II（全排列 II）](https://leetcode.com/problems/permutations-ii/) | [Java](./java/47.全排列-ii.java)|Medium|
+|46|[Permutations（全排列）](https://leetcode.com/problems/permutations/) | [Java](./java/46.全排列.java)|Medium|
 |43|[Multiply Strings（字符串相乘）](https://leetcode.com/problems/multiply-strings/) | [Java](./java/43.字符串相乘.java)|Medium|
 |42|[Trapping Rain Water（接雨水）](https://leetcode.com/problems/trapping-rain-water/) | [Java](./java/42.接雨水.java)|Hard|
 |35|[Search Insert Position（索插入位置）](https://leetcode.com/problems/search-insert-position/) | [Java](./java/35.搜索插入位置.java)|Easy|
