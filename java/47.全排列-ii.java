@@ -14,7 +14,7 @@ class Solution {
     public List<List<Integer>> permuteUnique(int[] nums) {
 
 
-        //思路 深度优先 递归 dfs + 回溯 加入判断条件 减枝
+        //思路 深度优先 递归 dfs + 回溯 加入判断条件 减枝 间复杂度：O(n * n!) 其中 n 为序列的长度
 
         List<List<Integer>> res = new ArrayList<>();
 

@@ -13,7 +13,7 @@ class Solution {
     public List<List<Integer>> permute(int[] nums) {
 
 
-        //思路 深度优先 递归 dfs + 回溯
+        //思路 深度优先 递归 dfs + 回溯 时间复杂度：O(n * n!) 其中 n 为序列的长度
 
         //获取数组长度 也就是树的深度 
         int len = nums.length;
