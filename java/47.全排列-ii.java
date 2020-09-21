@@ -49,15 +49,13 @@ class Solution {
         //递归结束条件
         if(depth == len){ //如果此时树层级深度 等于 数组长度 到底
            res.add(new ArrayList<>(path));
+           return;
         }
 
         for (int i = 0; i < len; i++) {
             if(used[i]){ //如果当前位置已经使用
                continue;
             }
-
-            
-
             //进行减枝 操作 去重
 
             if(i>0 && nums[i] == nums[i-1] && !used[i-1]){

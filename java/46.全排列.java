@@ -47,6 +47,7 @@ class Solution {
            //递归结束条件
            if(len == depth){
              res.add(new ArrayList<>(path));
+             return;
            }
            //逻辑处理进入下层递归
            for (int i = 0; i < len; i++) {

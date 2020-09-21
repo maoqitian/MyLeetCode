@@ -10,6 +10,8 @@ import java.util.List;
 // @lc code=start
 class Solution {
 
+    //时间复杂度 O(( k n)×k)
+
     public List<List<Integer>> combine(int n, int k) {
     //返回结果
     

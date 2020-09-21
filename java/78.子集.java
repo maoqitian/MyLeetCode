@@ -11,7 +11,7 @@ import java.util.List;
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
 
-        //分治算法 递归 
+        //分治算法 递归 时间复杂度 O(n * 2^n)
 
         List<List<Integer>> res = new ArrayList<>();
 
