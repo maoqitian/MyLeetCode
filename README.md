@@ -5,6 +5,7 @@
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |637|[Average of Levels in Binary Tree（二叉树的层平均值）](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | [Java](./java/637.二叉树的层平均值.java)|Easy|
+|344|[Reverse String（反转字符串）](https://leetcode.com/problems/reverse-string/) | [Java](./java/344.反转字符串.java)|Easy|
 |297|[Serialize and Deserialize Binary Tree（二叉树的序列化与反序列化）](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Java](./java/297.二叉树的序列化与反序列化.java)|Hard|
 |226|[Invert Binary Tree（翻转二叉树）](https://leetcode.com/problems/invert-binary-tree/) | [Java](./java/226.翻转二叉树.java)|Easy|
 |297|[Serialize and Deserialize Binary Tree（二叉树的序列化与反序列化）](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Java](./java/297.二叉树的序列化与反序列化.java)|Hard|
