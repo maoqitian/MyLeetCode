@@ -12,6 +12,8 @@
 |206|[Reverse Linked List（反转链表）](https://leetcode.com/problems/reverse-linked-list/) | [Java](./java/206.反转链表.java)|Easy|
 |145|[Binary Tree Postorder Traversal（二叉树的后序遍历）](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Java](./java/145.二叉树的后序遍历.java)|Hard|
 |144|[Binary Tree Preorder Traversal（二叉树的前序遍历）](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./java/144.二叉树的前序遍历.java)|Medium|
+|142|[Linked List Cycle II（环形链表 II）](https://leetcode.com/problems/linked-list-cycle-ii/) | [Java](./java/142.环形链表-ii.java)|Medium|
+|141|[Linked List Cycle（环形链表）](https://leetcode.com/problems/linked-list-cycle/) | [Java](./java/141.环形链表.java)|Easy|
 |111|[Minimum Depth of Binary Tree（二叉树的最小深度）](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Java](./java/111.二叉树的最小深度.java)|Easy|
 |110|[Balanced Binary Tree（平衡二叉树）](https://leetcode.com/problems/balanced-binary-tree/) | [Java](./java/110.平衡二叉树.java)|Easy|
 |107|[binary-tree-level-order-traversal-ii(二叉树的层次遍历-ii)](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [Java](./java/107.二叉树的层次遍历-ii.java)|Easy|
