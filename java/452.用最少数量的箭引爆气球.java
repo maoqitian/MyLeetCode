@@ -10,7 +10,7 @@ class Solution {
 
         if(points.length<1) return 0;
 
-        //根据每个气球右边距进行排序 
+        //根据每个气球右边距进行排序 时间复杂度 O(nlogn)
 
         Arrays.sort(points,(x,y) -> Integer.compare(x[1],y[1]));
         //假设有一支箭射中
