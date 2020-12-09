@@ -19,7 +19,7 @@
 class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         //使用HashMap 来保存已经计算过的值
-
+        //时间复杂度 O(n)
         val res = IntArray(2)
         val map = HashMap<Int,Int>()
         for ((index,item) in nums.withIndex()){
