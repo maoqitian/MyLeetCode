@@ -4,6 +4,8 @@
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|860|[Lemonade Change（柠檬水找零）](https://leetcode.com/problems/lemonade-change/) | [Java](./java/860.柠檬水找零.java)、[kotlin](./kotlinLeetCode/src/main/kotlin/leetcode/editor/cn/[860]柠檬水找零.kt)|Easy|
+|842|[Split Array into Fibonacci Sequence（将数组拆分成斐波那契序列）](https://leetcode.com/problems/split-array-into-fibonacci-sequence/) | [Java](./java/842.将数组拆分成斐波那契序列.java)、[kotlin](./kotlinLeetCode/src/main/kotlin/leetcode/editor/cn/[842]将数组拆分成斐波那契序列.kt)|Medium|
 |637|[Average of Levels in Binary Tree（二叉树的层平均值）](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | [Java](./java/637.二叉树的层平均值.java)|Easy|
 |344|[Reverse String（反转字符串）](https://leetcode.com/problems/reverse-string/) | [Java](./java/344.反转字符串.java)|Easy|
 |297|[Serialize and Deserialize Binary Tree（二叉树的序列化与反序列化）](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Java](./java/297.二叉树的序列化与反序列化.java)|Hard|
@@ -45,7 +47,7 @@
 |5|[Longest Palindromic Substring（最长回文子串）](https://leetcode.com/problems/longest-palindromic-substring/) | [Java](./java/5.最长回文子串.java)|Medium|
 |4|[Median of Two Sorted Arrays（寻找两个正序数组的中位数）](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Java](./java/4.寻找两个正序数组的中位数.java)|Hard|
 |3|[Longest Substring Without Repeating Characters（无重复字符的最长子串）](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Java](./java/3.无重复字符的最长子串.java)|Medium|
-|2|[Add Two Numbers（两数相加）](https://leetcode.com/problems/add-two-numbers/) | [Java](./java/2.两数相加.java)|Medium|
+|2|[Add Two Numbers（两数相加）](https://leetcode.com/problems/add-two-numbers/) | [Java](./java/2.两数相加.java)、[kotlin](./kotlinLeetCode/src/main/kotlin/leetcode/editor/cn/[2]两数相加.kt)|Medium|
 |1|[Two Sum（两数之和）](https://leetcode.com/problems/two-sum/) | [Java](./java/1.两数之和.java)、[kotlin](./kotlinLeetCode/src/main/kotlin/leetcode/editor/cn/[1]两数之和.kt)|Easy|
 
 
