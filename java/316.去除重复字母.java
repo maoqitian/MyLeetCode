@@ -9,7 +9,7 @@ class Solution {
     public String removeDuplicateLetters(String s) {
 
 
-         //贪心 + 栈 使用数组代替栈
+         //贪心 + 栈 使用数组代替栈 时间复杂度 O(n)
          boolean []visit = new boolean[26];
 
          int []num = new int[26];
