@@ -47,6 +47,18 @@
 class Solution {
     fun prefixesDivBy5(A: IntArray): BooleanArray {
 
+        //只要获取个位数 看是否符合 5 的取余
+        //时间复杂度 O(n)
+        var res = BooleanArray(A.size)
+        var num = 0
+        for ((index,value) in A.withIndex()){
+            num = num shl 1
+            num += value
+            num %= 10
+            res[index] = num % 5 == 0
+        }
+        return res
+
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

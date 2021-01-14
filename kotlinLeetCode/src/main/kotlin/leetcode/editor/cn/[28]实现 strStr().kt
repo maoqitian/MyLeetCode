@@ -27,7 +27,21 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     fun strStr(haystack: String, needle: String): Int {
+        //双指针 时间复杂度 O(N)
+        if(needle.isEmpty()) return 0
+        var i = 0
+        var j = 0
+        while(i<haystack.length && j<needle.length){
+            if(haystack[i]==needle[j]) {
+                i++
+                j++
+            } else {
+                i=i-j+1
+                j=0
+            }
 
+        }
+        return if(j==needle.length)  i-needle.length else -1
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
