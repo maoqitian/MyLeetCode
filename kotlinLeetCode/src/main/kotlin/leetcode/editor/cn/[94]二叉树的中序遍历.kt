@@ -1,7 +1,4 @@
-import java.util.*
-import kotlin.collections.ArrayList
-
-//给你二叉树的根节点 root ，返回它节点值的 前序 遍历。
+//给定一个二叉树的根节点 root ，返回它的 中序 遍历。 
 //
 // 
 //
@@ -9,7 +6,7 @@ import kotlin.collections.ArrayList
 //
 // 
 //输入：root = [1,null,2,3]
-//输出：[1,2,3]
+//输出：[1,3,2]
 // 
 //
 // 示例 2： 
@@ -30,7 +27,7 @@ import kotlin.collections.ArrayList
 //
 // 
 //输入：root = [1,2]
-//输出：[1,2]
+//输出：[2,1]
 // 
 //
 // 示例 5： 
@@ -51,9 +48,9 @@ import kotlin.collections.ArrayList
 //
 // 
 //
-// 进阶：递归算法很简单，你可以通过迭代算法完成吗？ 
-// Related Topics 栈 树 
-// 👍 498 👎 0
+// 进阶: 递归算法很简单，你可以通过迭代算法完成吗？ 
+// Related Topics 栈 树 哈希表 
+// 👍 843 👎 0
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -68,44 +65,27 @@ import kotlin.collections.ArrayList
  * }
  */
 class Solution {
-    fun preorderTraversal(root: TreeNode?): List<Int> {
-        //方法一 深度优先 前序遍历 中左右
+    fun inorderTraversal(root: TreeNode?): List<Int> {
+
+        //方法一 深度优先 中序遍历 左中右
         var res = ArrayList<Int>()
 
         dfs(root,res)
 
         return res
 
-        //方法二 使用栈
-
-        var stack = LinkedList<TreeNode>()
-        //当前节点
-        var curr = root
-
-        while(curr != null || !stack.isEmpty()){
-            if(curr != null){
-                //当前节点不为空
-                res.add(curr.`val`)
-                stack.addFirst(curr)
-                curr = curr.left
-            }else{
-                curr = stack.removeFirst()
-                curr = curr.right
-            }
-        }
-        return res
+        //方法二
 
     }
 
     private fun dfs(root: TreeNode?,res:ArrayList<Int>) {
         //递归结束条件
-        if(root == null) return
+        if (root == null) return
         //逻辑处理进入下层循环
+        if (root.left != null) dfs(root.left, res)
         res.add(root.`val`)
-        if(root.left!=null) dfs(root.left,res)
-        if(root.right!=null) dfs(root.right,res)
+        if (root.right != null) dfs(root.right, res)
         //数据reverse
-
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
