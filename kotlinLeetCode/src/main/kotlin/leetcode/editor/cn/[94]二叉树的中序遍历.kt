@@ -1,4 +1,7 @@
-//给定一个二叉树的根节点 root ，返回它的 中序 遍历。 
+import java.util.*
+import kotlin.collections.ArrayList
+
+//给定一个二叉树的根节点 root ，返回它的 中序 遍历。
 //
 // 
 //
@@ -74,7 +77,22 @@ class Solution {
 
         return res
 
-        //方法二
+        //方法二 使用栈
+        var stack = LinkedList<TreeNode>()
+        //当前节点
+        var curr = root
+        while(curr != null || !stack.isEmpty()){
+            if(curr != null){
+                //当前节点不为空
+                stack.addFirst(curr)
+                curr = curr.left
+            }else{
+                curr = stack.removeFirst()
+                res.add(curr.`val`)
+                curr = curr.right
+            }
+        }
+        return res
 
     }
 

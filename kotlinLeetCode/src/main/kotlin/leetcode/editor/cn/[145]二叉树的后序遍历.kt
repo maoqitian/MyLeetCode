@@ -1,4 +1,7 @@
-//给定一个二叉树，返回它的 后序 遍历。 
+import java.util.*
+import kotlin.collections.ArrayList
+
+//给定一个二叉树，返回它的 后序 遍历。
 //
 // 示例: 
 //
@@ -32,11 +35,28 @@ class Solution {
         //方法一 深度优先 后序遍历 左右中
         var res = ArrayList<Int>()
 
-        dfs(root,res)
-
-        return res
+//        dfs(root,res)
+//
+//        return res
 
         //方法二
+
+        val result = LinkedList<Int>()
+
+        val stack = LinkedList<TreeNode>()
+
+        stack.push(root)
+
+        while (!stack.isEmpty()) {
+            val node = stack.removeFirst()
+            if (null != node) {
+                result.addFirst(node.`val`)
+                stack.addFirst(node.left)
+                stack.addFirst(node.right)
+            }
+        }
+        return result
+
 
     }
 
