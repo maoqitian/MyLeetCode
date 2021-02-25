@@ -39,6 +39,19 @@
 class Solution {
     fun transpose(matrix: Array<IntArray>): Array<IntArray> {
 
+        //相当于把 M*N矩阵 转变成 N*M 矩阵 , res[j][i] = matrix[i][j]
+        //时间复杂度 O（mn）
+
+        var m = matrix.size
+        var n = matrix[0].size
+        val res = Array(n) { IntArray(m) }
+
+        for (i in 0 until m){
+            for ( j in 0 until n){
+                res[j][i] = matrix[i][j]
+            }
+        }
+        return res
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
