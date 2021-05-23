@@ -63,11 +63,12 @@ class Solution {
         }
         return maxArea*/
         //方法二 双指针 时间复杂度 O（n）
-            var i = 0
-            var j: Int = height.size - 1
-            while (i < j) {
-                val minHeight = if (height[i] < height[j]) height[i++] else height[j--]
-                maxArea = Math.max(maxArea, minHeight * (j - i + 1))
+            var left = 0
+            var right: Int = height.size - 1
+            while (left < right) {
+                //找出最高较小的边
+                val minHeight = if (height[left] < height[right]) height[left++] else height[right--]
+                maxArea = Math.max(maxArea, minHeight * (right - left + 1))
             }
         return maxArea
     }
