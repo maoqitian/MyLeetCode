@@ -31,6 +31,30 @@
 class Solution {
     fun generateParenthesis(n: Int): List<String> {
 
+        //递归
+        val res = ArrayList<String>()
+        if(n == 0) return res
+
+        generateStr(res,0,0,n,"")
+
+        return res
+
+    }
+
+    private fun generateStr(res: java.util.ArrayList<String>, left: Int, right: Int, n: Int, s: String) {
+        //递归结束条件
+        if(s.length == n * 2){
+            res.add(s)
+            return
+        }
+        //逻辑处理 进入下层循环
+        if(left < n){
+            generateStr(res,left+1,right,n, "$s(")
+        }
+        if(right < left){
+            generateStr(res,left,right+1,n, "$s)")
+        }
+        //数据reverse
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
