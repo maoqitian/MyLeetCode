@@ -26,25 +26,31 @@
  */
 class Solution {
     fun deleteDuplicates(head: ListNode?): ListNode? {
-        if (head == null || head.next == null) return head
 
-        //逻辑处理 进入下层循环
+        //遍历 时间复杂度 O（n）
 
-        //逻辑处理 进入下层循环
-        var next: ListNode = head.next
-        if (head.`val` === next.`val`) {
-            //找到不相等为止
-            while (next != null && head.`val` === next.`val`) {
-                next = next.next
+        var resNode = ListNode(0)
+
+        resNode.next = head
+        var currNode = resNode
+
+        while (currNode.next != null){
+            var ptr = currNode.next
+            //是否有重复
+            var isDup = false
+            while (ptr.next != null && ptr.next.`val` == currNode.next.`val`){
+                ptr = ptr.next
+                isDup = true
             }
-            head = deleteDuplicates(next)
-        } else {
-            head.next = deleteDuplicates(next)
-        }
-        //数据 reverse
 
-        //数据 reverse
-        return head
+            if (isDup){
+                currNode.next = ptr.next
+            }else{
+                currNode = currNode.next
+            }
+        }
+
+        return resNode.next
     }
 
 }
