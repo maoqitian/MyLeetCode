@@ -33,6 +33,7 @@ import javax.swing.tree.TreeNode
 class Solution {
     fun numTrees(n: Int): Int {
         //动态规划
+        //将 1……(i−1) 序列作为左子树，将 (i+1)……n作为右子树
         var intArray = IntArray(n + 1)
         intArray[0] =1
         intArray[1] = 1
