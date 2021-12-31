@@ -37,7 +37,20 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    fun findOcurrences(text: String, first: String, second: String): Array<String> {
+    fun findOcurrences(text: String, first: String, second: String): ArrayList<String> {
+
+        //暴力求解 时间复杂度 O(n)
+        var splitArray = text.split(" ")
+
+        var resList = ArrayList<String>()
+
+        for (i in 0 until splitArray.size-2){
+            if (splitArray[i] == first && splitArray[i+1] == second){
+                resList.add(splitArray[i+2])
+            }
+        }
+
+        return resList
 
     }
 }
